@@ -1,0 +1,28 @@
+<h2>Hero List!</h2>
+<select ng-model="primaryPower" ng-options="power for power in powers"></select>
+
+<div ng-show="selectSome">
+  <section id="heroListDisplay" ng-repeat="hero in selectedHeroes">
+    <div>
+      <h2>{{hero.alias}}</h2>
+      <h3>{{hero.firstName}}{{hero.lastName}}</h3>
+      <h3>{{hero.city}}</h3>
+      <h3>{{hero.primaryPower}}</h3>
+
+      <button ng-click="removeHero(hero._id)">Remove</button>
+    </div>
+  </section>
+</div>
+
+<div ng-show="selectAll">
+<section id="heroListDisplay" ng-repeat="hero in heroes">
+  <div>
+    <h2>{{hero.alias}}</h2>
+    <h3>{{hero.firstName}}{{hero.lastName}}</h3>
+    <h3>{{hero.city}}</h3>
+    <h3>{{hero.primaryPower}}</h3>
+
+    <button ng-click="removeHero(hero._id)">Remove</button>
+  </div>
+</section>
+</div>

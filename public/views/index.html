@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Hero App</title>
+  <script type="text/javascript" src="/vendors/angular.min.js"></script>
+  <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+  <script type="text/javascript" src="/scripts/app.js"></script>
+  <script type="text/javascript" src="/scripts/factories/heroFactory.js"></script>
+  <script type="text/javascript" src="/scripts/controllers/heroEntryController.js"></script>
+  <script type="text/javascript" src="/scripts/controllers/heroListRemoveController.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+<h1>Hero Database!!</h1>
+<div ng-include="'views/templates/navbar.html'"></div>
+<main ng-view></main>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<h2>Create a Hero!</h2>
+<form>
+  <label for="alias">Alias: </label>
+  <input type="text" ng-model="alias" id="alias"/>
+  <label for="firstName">First Name: </label>
+  <input type="text" ng-model="firstName" id="firstName"/>
+  <label for="lastName">Last Name: </label>
+  <input type="text" ng-model="lastName" id="lastName"/>
+  <label for="city">City: </label>
+  <input type="text" ng-model="city" id="city"/>
+
+  <select ng-model="primaryPower" ng-options="power for power in powers"></select>
+
+  <button ng-click="submitHero()">Submit</button>
+</form>
+
